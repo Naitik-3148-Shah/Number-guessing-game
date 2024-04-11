@@ -10,10 +10,13 @@ def guess_number():
     i = 0
     while i == 0:
         user = int(input("Guess a number: "))
+        #  Checking the number is in range or not
         if user > Lower and user < Upper:
             if user > randno:
+                #  Hints!
                 print("Wrong! It's too large, Try again!\n")
             elif user < randno:
+                #  Hints!
                 print("Wrong! It's too small, Try again!\n")
             elif user == randno:
                 print("Fantastic! you guessed the right number.\n")
